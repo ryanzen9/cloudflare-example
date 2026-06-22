@@ -6,11 +6,13 @@
     "deploy": "wrangler deploy",
     "start": "wrangler dev",
     "cf-typegen": "wrangler types",
+    "login": "wrangler login",
     "install": "oxlint",
     "lint": "oxlint src/",
     "check": "oxfmt --check . && oxlint src/ && tsc",
     "format": "oxfmt . --write",
     "db:deploy": "wrangler d1 migrations apply drizzle_example --local",
+    "db:deploy:remote": "wrangler d1 migrations apply drizzle_example --remote",
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
